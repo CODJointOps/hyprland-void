@@ -1,6 +1,6 @@
 --- a/src/helpers/Monitor.cpp
 +++ b/src/helpers/Monitor.cpp
-@@ -549,7 +549,10 @@ void CMonitor::attemptDirectScanout() {
+@@ -549,7 +549,9 @@
          std::ranges::sort(sortedModes, sortFunc);
          if (sortedModes.size() > 3)
              sortedModes.erase(sortedModes.begin() + 3, sortedModes.end());
@@ -9,3 +9,5 @@
 +        for (auto& mode : reversedModes)
 +            requestedModes.push_back(mode);
      };
+ 
+     // last fallback is always preferred mode
