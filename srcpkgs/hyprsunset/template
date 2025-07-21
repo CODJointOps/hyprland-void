@@ -1,6 +1,6 @@
 # Template file for 'hyprsunset'
 pkgname=hyprsunset
-version=0.2.0
+version=0.3.0
 revision=1
 build_style=cmake
 configure_args+=" --no-warn-unused-cli"
@@ -18,13 +18,14 @@ makedepends="
   hyprutils
   wayland-devel
   wayland-protocols
+  hyprlang
 "
 short_desc="An application to enable a blue-light filter on Hyprland"
 maintainer="Makrennel <makrommel@protonmail.ch>"
 license="BSD-3-Clause"
 homepage="https://github.com/hyprwm/hyprsunset"
 distfiles="https://github.com/hyprwm/hyprsunset/archive/refs/tags/v${version}.tar.gz"
-checksum=178d2b6c0042e005770eb31492fb7583c9fd25e37351a29f44bff56e87a52ad3
+checksum=bf941d9d44d6ec24af69f89b3cfbddeb2714abb908e54839adbc859c2a7d1fe6
 
 post_install() {
   vlicense LICENSE
